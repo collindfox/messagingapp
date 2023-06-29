@@ -25,4 +25,10 @@ const firestore = firebase.firestore();
 const analytics = firebase.analytics();
 function App() {
   const [user] = useAuthState(auth);
+  return (
+    <View>
+      <Text>Hello World</Text>
+    </View> 
+  )
 }
+
