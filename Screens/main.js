@@ -20,3 +20,9 @@ firebase.initializeApp({
   appId: "1:731937303281:web:980a927fcb319ecd4f5750",
   measurementId: "G-YNG84L7HTS",
 });
+const auth = firebase.auth();
+const firestore = firebase.firestore();
+const analytics = firebase.analytics();
+function App() {
+  const [user] = useAuthState(auth);
+}
